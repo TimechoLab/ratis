@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-replicated-map</artifactId>
-  <name>Timecho Ratis based on  Replicated Map</name>
+  <name>Timecho Ratis based on ApacheReplicated Map</name>
 
   <properties>
     <!-- no tests in this module so far -->

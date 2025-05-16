@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-server</artifactId>
-  <name>Timecho Ratis based on  Server</name>
+  <name>Timecho Ratis based on ApacheServer</name>
 
   <dependencies>
     <dependency>

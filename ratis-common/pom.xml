@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-common</artifactId>
-  <name>Timecho Ratis based on  Common</name>
+  <name>Timecho Ratis based on ApacheCommon</name>
 
   <dependencies>
     <dependency>

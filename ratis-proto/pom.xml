@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-proto</artifactId>
-  <name>Timecho Ratis based on  Protocols</name>
+  <name>Timecho Ratis based on ApacheProtocols</name>
 
   <properties>
     <maven.javadoc.skip>true</maven.javadoc.skip>

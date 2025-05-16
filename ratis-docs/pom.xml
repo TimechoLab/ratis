@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-docs</artifactId>
-  <name>Timecho Ratis based on  Documentation</name>
+  <name>Timecho Ratis based on ApacheDocumentation</name>
   <packaging>jar</packaging>
 
   <properties>

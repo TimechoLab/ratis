@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-examples</artifactId>
-  <name>Timecho Ratis based on  Examples</name>
+  <name>Timecho Ratis based on ApacheExamples</name>
 
   <properties>
     <jcommander.version>1.82</jcommander.version>

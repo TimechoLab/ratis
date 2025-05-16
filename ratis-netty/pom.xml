@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-netty</artifactId>
-  <name>Timecho Ratis based on  Netty Support</name>
+  <name>Timecho Ratis based on ApacheNetty Support</name>
 
   <properties>
     <!-- no tests in this module so far -->

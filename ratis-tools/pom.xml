@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-tools</artifactId>
-  <name>Timecho Ratis based on  Tools</name>
+  <name>Timecho Ratis based on ApacheTools</name>
 
   <properties>
     <!-- no tests in this module so far -->

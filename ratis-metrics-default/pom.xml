@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-metrics-default</artifactId>
-  <name>Timecho Ratis based on  Metrics Default Implementation</name>
+  <name>Timecho Ratis based on ApacheMetrics Default Implementation</name>
 
   <dependencies>
     <dependency>

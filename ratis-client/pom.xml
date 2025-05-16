@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-client</artifactId>
-  <name>Timecho Ratis based on  Client</name>
+  <name>Timecho Ratis based on ApacheClient</name>
 
   <properties>
     <!-- no tests in this module so far -->
