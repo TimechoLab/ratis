@@ -12,16 +12,18 @@
   See the License for the specific language governing permissions and
   limitations under the License. See accompanying LICENSE file.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>ratis</artifactId>
-    <groupId>org.apache.ratis</groupId>
-    <version>3.2.0-SNAPSHOT</version>
+    <groupId>com.timecho.ratis</groupId>
+    <version>3.2.0</version>
   </parent>
 
   <artifactId>ratis-test</artifactId>
-  <name>Apache Ratis Test</name>
+  <name>Timecho Ratis based on  Test</name>
 
   <properties>
     <bouncycastle.version>1.78.1</bouncycastle.version>
@@ -30,66 +32,66 @@
   <dependencies>
     <dependency>
       <artifactId>ratis-common</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <artifactId>ratis-common</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-client</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <artifactId>ratis-server</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <artifactId>ratis-server</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-metrics-default</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <artifactId>ratis-netty</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <artifactId>ratis-netty</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-grpc</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <artifactId>ratis-grpc</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <artifactId>ratis-shell</artifactId>
       <scope>test</scope>
       <exclusions>

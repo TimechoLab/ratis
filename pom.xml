@@ -12,7 +12,9 @@
   See the License for the specific language governing permissions and
   limitations under the License. See accompanying LICENSE file.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -23,9 +25,9 @@
   </parent>
 
   <artifactId>ratis</artifactId>
-  <groupId>org.apache.ratis</groupId>
-  <version>3.2.0-SNAPSHOT</version>
-  <name>Apache Ratis</name>
+  <groupId>com.timecho.ratis</groupId>
+  <version>3.2.0</version>
+  <name>Timecho Ratis based on Apache Ratis</name>
   <packaging>pom</packaging>
   <description>
     Apache Ratis is an open source java implementation for RAFT consensus protocol
@@ -106,7 +108,8 @@
     <url>http://issues.apache.org/jira/browse/RATIS</url>
   </issueManagement>
 
-  <!--<ciManagement> TODO
+  <!--<ciManagement>
+  TODO
     <system>Jenkins</system>
     <url>http://builds.apache.org/job/Ratis-Master/</url>
   </ciManagement>-->
@@ -158,10 +161,10 @@
 
 
   <properties>
-    <project.build.outputTimestamp>2023-11-19T14:23:30Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2025-05-16T10:23:26Z</project.build.outputTimestamp>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-     <!-- where to find the generated LICENSE files -->
+    <!-- where to find the generated LICENSE files -->
     <license.aggregate.path>
       ${project.build.directory}/maven-shared-archive-resources/META-INF/LICENSE
     </license.aggregate.path>
@@ -231,18 +234,18 @@
       <!-- Internal dependencies -->
       <dependency>
         <artifactId>ratis-docs</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
         <artifactId>ratis-client</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-client</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
@@ -250,12 +253,12 @@
 
       <dependency>
         <artifactId>ratis-common</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-common</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
@@ -263,68 +266,68 @@
 
       <dependency>
         <artifactId>ratis-examples</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-examples</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
         <artifactId>ratis-experiments</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-metrics-api</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-metrics-default</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-metrics-dropwizard3</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-metrics-default</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
         <artifactId>ratis-tools</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-tools</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
         <artifactId>ratis-shell</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-grpc</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-grpc</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
@@ -332,12 +335,12 @@
 
       <dependency>
         <artifactId>ratis-netty</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-netty</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
@@ -345,18 +348,18 @@
 
       <dependency>
         <artifactId>ratis-proto</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
         <artifactId>ratis-replicated-map</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-replicated-map</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
@@ -364,18 +367,18 @@
 
       <dependency>
         <artifactId>ratis-server-api</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
         <artifactId>ratis-server</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-server</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
@@ -383,12 +386,12 @@
 
       <dependency>
         <artifactId>ratis-test</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <artifactId>ratis-test</artifactId>
-        <groupId>org.apache.ratis</groupId>
+        <groupId>com.timecho.ratis</groupId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
@@ -556,7 +559,9 @@
                 <rules>
                   <restrictImports>
                     <includeTestCode>false</includeTestCode>
-                    <reason>Classes (e.g. FileInputStream, FileOutputStream) overriding the Object.finalize() method will cause gc to run a much longer time. As stated in Effective Java, there is a severe performance penalty for using finalizers.</reason>
+                    <reason>Classes (e.g. FileInputStream, FileOutputStream) overriding the
+                      Object.finalize() method will cause gc to run a much longer time. As stated in
+                      Effective Java, there is a severe performance penalty for using finalizers.</reason>
                     <bannedImports>
                       <bannedImport>java.io.FileInputStream</bannedImport>
                       <bannedImport>java.io.FileOutputStream</bannedImport>
@@ -572,7 +577,8 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
           <configuration>
-            <!--Defer to the ratis-assembly sub-module.  It does all assembly-->
+            <!--Defer
+            to the ratis-assembly sub-module.  It does all assembly-->
             <skipAssembly>true</skipAssembly>
           </configuration>
         </plugin>
@@ -614,7 +620,8 @@
             <execution>
               <phase>prepare-package</phase>
               <goals>
-                <!--This goal will install a -test.jar when we do install
+                <!--This
+                goal will install a -test.jar when we do install
                     See http://maven.apache.org/guides/mini/guide-attached-tests.html
                  -->
                 <goal>test-jar</goal>
@@ -662,12 +669,14 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
           <configuration>
-            <!--You need this profile. It'll sign your artifacts.
+            <!--You
+            need this profile. It'll sign your artifacts.
                 I'm not sure if this config. actually works though.
                 I've been specifying -Papache-release on the command-line
              -->
             <releaseProfiles>apache-release</releaseProfiles>
-            <!--This stops our running tests for each stage of maven release.
+            <!--This
+            stops our running tests for each stage of maven release.
                 But it builds the test jar.  From SUREFIRE-172.
               -->
             <arguments>-Dmaven.test.skip.exec ${arguments}</arguments>
@@ -770,7 +779,8 @@
                 <requireMavenVersion>
                   <version>[${maven.min.version},)</version>
                   <message>Maven is out of date.
-                    Ratis requires at least version ${maven.min.version} of Maven to properly build from source.
+                    Ratis requires at least version ${maven.min.version} of Maven to properly build
+                    from source.
                     You appear to be using an older version. You can use either "mvn -version" or
                     "mvn enforcer:display-info" to verify what version is active.
                   </message>
@@ -779,7 +789,8 @@
                 <requireJavaVersion>
                   <version>[${java.min.version},)</version>
                   <message>Java is out of date.
-                    Ratis requires at least version ${java.min.version} of the JDK to properly build from source.
+                    Ratis requires at least version ${java.min.version} of the JDK to properly build
+                    from source.
                     You appear to be using an older version. You can use either "mvn -version" or
                     "mvn enforcer:display-info" to verify what version is active.
                   </message>
@@ -1038,10 +1049,14 @@
                     <enforceBytecodeVersion>
                       <maxJdkVersion>${java.min.version}</maxJdkVersion>
                       <message>Ratis has unsupported dependencies.
-                        Ratis requires that all dependencies be compiled with version ${java.min.version} or earlier
-                        of the JDK to properly build from source.  You appear to be using a newer dependency. You can use
-                        either "mvn -version" or "mvn enforcer:display-info" to verify what version is active.
-                        Non-release builds can temporarily build with a newer JDK version by setting the
+                        Ratis requires that all dependencies be compiled with version
+                        ${java.min.version} or earlier
+                        of the JDK to properly build from source. You appear to be using a newer
+                        dependency. You can use
+                        either "mvn -version" or "mvn enforcer:display-info" to verify what version
+                        is active.
+                        Non-release builds can temporarily build with a newer JDK version by setting
+                        the
                         'javac.source' property (eg. mvn -Djavac.source=1.8 clean package).
                       </message>
                     </enforceBytecodeVersion>
