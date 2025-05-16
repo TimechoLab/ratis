@@ -156,7 +156,12 @@
   </mailingLists>
 
   <developers>
-    <!-- TODO: Add developers -->
+    <developer>
+      <name>Timecho Release</name>
+      <email>contact@timecho.com</email>
+      <organization>timecho</organization>
+      <organizationUrl>http://www.timecho.com</organizationUrl>
+    </developer>
   </developers>
 
 
@@ -752,6 +757,16 @@
 
     <plugins>
       <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>0.7.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
+          <autoPublish>true</autoPublish>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
       </plugin>
@@ -996,6 +1011,20 @@
           </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.5</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
             <executions>
               <execution>
@@ -1196,6 +1225,16 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+    <profile>
+      <id>ossrh</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <gpg.executable>gpg2</gpg.executable>
+        <gpg.passphrase>the_pass_phrase</gpg.passphrase>
+      </properties>
     </profile>
   </profiles>
 </project>
