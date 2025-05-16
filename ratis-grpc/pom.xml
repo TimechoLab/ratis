@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-grpc</artifactId>
-  <name>Timecho Ratis based on ApachegRPC Support</name>
+  <name>Timecho Ratis based on Apache gRPC Support</name>
 
   <dependencies>
     <dependency>

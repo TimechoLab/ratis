@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-experiments</artifactId>
-  <name>Timecho Ratis based on ApacheExperiments</name>
+  <name>Timecho Ratis based on Apache Experiments</name>
 
   <properties>
     <!-- no tests in this module so far -->

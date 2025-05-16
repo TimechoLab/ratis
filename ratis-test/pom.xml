@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-test</artifactId>
-  <name>Timecho Ratis based on ApacheTest</name>
+  <name>Timecho Ratis based on Apache Test</name>
 
   <properties>
     <bouncycastle.version>1.78.1</bouncycastle.version>

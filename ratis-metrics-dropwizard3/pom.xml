@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-metrics-dropwizard3</artifactId>
-  <name>Timecho Ratis based on ApacheMetrics Dropwizard 3 Implementation</name>
+  <name>Timecho Ratis based on Apache Metrics Dropwizard 3 Implementation</name>
 
   <properties>
     <dropwizard3.version>3.2.5</dropwizard3.version>

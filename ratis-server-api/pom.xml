@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-server-api</artifactId>
-  <name>Timecho Ratis based on ApacheServer API</name>
+  <name>Timecho Ratis based on Apache Server API</name>
 
   <properties>
     <!-- no tests in this module so far -->

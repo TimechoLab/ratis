@@ -30,7 +30,7 @@
   </parent>
 
   <artifactId>ratis-resource-bundle</artifactId>
-  <name>Timecho Ratis based on Apache- Resource Bundle</name>
+  <name>Timecho Ratis based on Apache - Resource Bundle</name>
   <description>licensing info for use when bundling works</description>
 
   <properties>

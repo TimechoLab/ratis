@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-assembly</artifactId>
-  <name>Timecho Ratis based on ApacheProject Assembly</name>
+  <name>Timecho Ratis based on Apache Project Assembly</name>
 
   <packaging>pom</packaging>
 

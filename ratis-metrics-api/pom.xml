@@ -23,7 +23,7 @@
   </parent>
 
   <artifactId>ratis-metrics-api</artifactId>
-  <name>Timecho Ratis based on ApacheMetrics API</name>
+  <name>Timecho Ratis based on Apache Metrics API</name>
 
   <properties>
     <!-- no tests in this module so far -->

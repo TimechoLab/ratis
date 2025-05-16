@@ -21,7 +21,7 @@
   </parent>
 
   <artifactId>ratis-shell</artifactId>
-  <name>Timecho Ratis based on ApacheShell</name>
+  <name>Timecho Ratis based on Apache Shell</name>
 
   <properties>
     <!-- no tests in this module so far -->
