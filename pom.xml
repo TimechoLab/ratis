@@ -93,7 +93,7 @@
     <module>ratis-metrics-dropwizard3</module>
     <module>ratis-tools</module>
     <module>ratis-shell</module>
-    <module>ratis-assembly</module>
+    <!-- <module>ratis-assembly</module> -->
   </modules>
 
   <scm>

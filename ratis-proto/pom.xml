@@ -26,7 +26,6 @@
   <name>Timecho Ratis based on Apache Protocols</name>
 
   <properties>
-    <maven.javadoc.skip>true</maven.javadoc.skip>
     <!-- no testable code in this module -->
     <skipTests>true</skipTests>
     <spotbugs.skip>true</spotbugs.skip>
