@@ -703,6 +703,7 @@
             <excludes combine.children="append">
               <exclude>.github/*.md</exclude>
               <exclude>target/*</exclude>
+              <exclude>**/*</exclude>
             </excludes>
           </configuration>
         </plugin>
