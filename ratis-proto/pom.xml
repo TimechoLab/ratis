@@ -12,20 +12,19 @@
   See the License for the specific language governing permissions and
   limitations under the License. See accompanying LICENSE file.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>ratis</artifactId>
-    <groupId>com.timecho.ratis</groupId>
-    <version>3.2.0</version>
+    <groupId>org.apache.ratis</groupId>
+    <version>3.2.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>ratis-proto</artifactId>
-  <name>Timecho Ratis based on Apache Protocols</name>
+  <name>Apache Ratis Protocols</name>
 
   <properties>
+    <maven.javadoc.skip>true</maven.javadoc.skip>
     <!-- no testable code in this module -->
     <skipTests>true</skipTests>
     <spotbugs.skip>true</spotbugs.skip>
@@ -56,7 +55,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <configuration />
+        <configuration/>
       </plugin>
       <!-- Make a jar and put the sources in the jar -->
       <plugin>
@@ -64,8 +63,7 @@
         <artifactId>maven-source-plugin</artifactId>
       </plugin>
       <plugin>
-        <!--Make
-        it so assembly:single does nothing in here-->
+        <!--Make it so assembly:single does nothing in here-->
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
           <skipAssembly>true</skipAssembly>
@@ -80,8 +78,7 @@
           </protocArtifact>
           <!-- Place these in a location that compiler-plugin is already looking -->
           <outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
-          <!-- With multiple executions, this must be `false` otherwise we wipe out the previous
-          execution -->
+          <!-- With multiple executions, this must be `false` otherwise we wipe out the previous execution -->
           <clearOutputDirectory>false</clearOutputDirectory>
         </configuration>
         <executions>
@@ -123,7 +120,7 @@
         <configuration>
           <basedir>${project.build.directory}/generated-sources</basedir>
           <includes>
-            <include>**/*.java</include>
+              <include>**/*.java</include>
           </includes>
           <replacements>
             <replacement>
@@ -140,9 +137,7 @@
     </plugins>
     <pluginManagement>
       <plugins>
-        <!--This
-        plugin's configuration is used to store Eclipse m2e settings only. It has no influence on
-        the Maven build itself.-->
+        <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         <plugin>
           <groupId>org.eclipse.m2e</groupId>
           <artifactId>lifecycle-mapping</artifactId>

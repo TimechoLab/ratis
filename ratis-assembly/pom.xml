@@ -12,18 +12,16 @@
   See the License for the specific language governing permissions and
   limitations under the License. See accompanying LICENSE file.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>ratis</artifactId>
-    <groupId>com.timecho.ratis</groupId>
-    <version>3.2.0</version>
+    <groupId>org.apache.ratis</groupId>
+    <version>3.2.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>ratis-assembly</artifactId>
-  <name>Timecho Ratis based on Apache Project Assembly</name>
+  <name>Apache Ratis Project Assembly</name>
 
   <packaging>pom</packaging>
 
@@ -41,7 +39,7 @@
 
   <build>
     <plugins>
-      <!-- licensing info from our dependencies -->
+<!-- licensing info from our dependencies -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-remote-resources-plugin</artifactId>
@@ -189,116 +187,116 @@
       <artifactId>ratis-thirdparty-misc</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <artifactId>ratis-resource-bundle</artifactId>
       <version>${project.version}</version>
       <optional>true</optional>
-    </dependency>
+     </dependency>
     <dependency>
       <artifactId>ratis-docs</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-proto</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-common</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-common</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-client</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-client</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <type>test-jar</type>
     </dependency>
     <dependency>
       <artifactId>ratis-server-api</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-server</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-server</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-grpc</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-grpc</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-netty</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-netty</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-test</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-test</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-examples</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-examples</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-replicated-map</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-replicated-map</artifactId>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <artifactId>ratis-metrics-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <artifactId>ratis-metrics-default</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <artifactId>ratis-tools</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.timecho.ratis</groupId>
+      <groupId>org.apache.ratis</groupId>
       <artifactId>ratis-shell</artifactId>
     </dependency>
   </dependencies>
@@ -345,8 +343,7 @@
                   <arguments>
                     <argument>bash</argument>
                     <argument>-c</argument>
-                    <argument>cat maven-shared-archive-resources/META-INF/NOTICE `find
-                      ${project.build.directory}/dependency -iname NOTICE -or -iname NOTICE.txt`</argument>
+                    <argument>cat maven-shared-archive-resources/META-INF/NOTICE `find ${project.build.directory}/dependency -iname NOTICE -or -iname NOTICE.txt`</argument>
                   </arguments>
                   <outputFile>${project.build.directory}/NOTICE.aggregate</outputFile>
                   <workingDirectory>${project.build.directory}</workingDirectory>

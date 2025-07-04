@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <!--
   /**
    * Licensed to the Apache Software Foundation (ASF) under one
@@ -24,13 +22,13 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>ratis</artifactId>
-    <groupId>com.timecho.ratis</groupId>
-    <version>3.2.0</version>
+    <groupId>org.apache.ratis</groupId>
+    <version>3.2.0-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
 
   <artifactId>ratis-resource-bundle</artifactId>
-  <name>Timecho Ratis based on Apache - Resource Bundle</name>
+  <name>Apache Ratis - Resource Bundle</name>
   <description>licensing info for use when bundling works</description>
 
   <properties>
@@ -38,12 +36,11 @@
     <maven.test.skip>true</maven.test.skip>
   </properties>
   <!-- hack until we break things out into a project pom and parent pom -->
-  <dependencies />
+  <dependencies/>
   <build>
     <plugins>
       <plugin>
-        <!--Make
-        it so assembly:single does nothing in here-->
+        <!--Make it so assembly:single does nothing in here-->
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
           <skipAssembly>true</skipAssembly>
