@@ -12,16 +12,18 @@
   See the License for the specific language governing permissions and
   limitations under the License. See accompanying LICENSE file.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>ratis</artifactId>
-    <groupId>org.apache.ratis</groupId>
-    <version>3.2.0</version>
+    <groupId>com.timecho.ratis</groupId>
+    <version>3.2.1</version>
   </parent>
 
   <artifactId>ratis-examples</artifactId>
-  <name>Apache Ratis Examples</name>
+  <name>Timecho Ratis based on Apache Examples</name>
 
   <properties>
     <jcommander.version>1.82</jcommander.version>
@@ -33,70 +35,70 @@
       <artifactId>ratis-thirdparty-misc</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <artifactId>ratis-proto</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <artifactId>ratis-tools</artifactId>
     </dependency>
 
     <dependency>
       <artifactId>ratis-common</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-common</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-client</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
     </dependency>
 
     <dependency>
       <artifactId>ratis-server</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-server</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-metrics-default</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
     </dependency>
 
     <dependency>
       <artifactId>ratis-grpc</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-grpc</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
 
     <dependency>
       <artifactId>ratis-netty</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-netty</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
     <dependency>
       <artifactId>ratis-test</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
@@ -148,7 +150,8 @@
               <createDependencyReducedPom>false</createDependencyReducedPom>
               <shadedArtifactAttached>false</shadedArtifactAttached>
               <transformers>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                <transformer
+                  implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                   <mainClass>org.apache.ratis.examples.common.Runner</mainClass>
                 </transformer>
               </transformers>
