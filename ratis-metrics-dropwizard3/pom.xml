@@ -12,17 +12,18 @@
   See the License for the specific language governing permissions and
   limitations under the License. See accompanying LICENSE file.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>ratis</artifactId>
-    <groupId>org.apache.ratis</groupId>
-    <version>3.2.0-SNAPSHOT</version>
+    <groupId>com.timecho.ratis</groupId>
+    <version>3.2.0</version>
   </parent>
 
   <artifactId>ratis-metrics-dropwizard3</artifactId>
-  <name>Apache Ratis Metrics Dropwizard 3 Implementation</name>
+  <name>Timecho Ratis based on Apache Metrics Dropwizard 3 Implementation</name>
 
   <properties>
     <dropwizard3.version>3.2.5</dropwizard3.version>
@@ -31,19 +32,19 @@
   <dependencies>
     <dependency>
       <artifactId>ratis-metrics-api</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-proto</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-common</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
     </dependency>
     <dependency>
       <artifactId>ratis-common</artifactId>
-      <groupId>org.apache.ratis</groupId>
+      <groupId>com.timecho.ratis</groupId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
